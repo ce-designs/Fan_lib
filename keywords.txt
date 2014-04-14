@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map For Fan library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Fan	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+Start	KEYWORD2
+Stop	KEYWORD2
+SetSpeed	KEYWORD2
+GetSpeed	KEYWORD2
+StartAtFullSpeed	KEYWORD2
+LowestSpeed	KEYWORD2
+HighestSpeed	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
