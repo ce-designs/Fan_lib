@@ -1,11 +1,13 @@
-/* 
+/*
 * Fan.cpp
 *
-* Created: 13-4-2014 13:28:31
-* Author: CE-Designs
-* Version: 1.0.0.0 
+* Created:	13-4-2014 13:28:31
+* Author:	CE-Designs
+* Version:	1.01
+*
+* Modified: 13-7-2014
+* Reason:	The pinMode was not set for the fan control pin
 */
-
 
 #include "Fan.h"
 
@@ -13,6 +15,7 @@
 Fan::Fan(int pwmControlPin, int minValue)
 {
 	FanControlPin = pwmControlPin;
+	pinMode(pwmControlPin, OUTPUT);
 	MinValue = minValue;
 } //Fan
 
@@ -33,7 +36,7 @@ int Fan::GetSpeed()
 // Starts the fan at full speed to be sure
 // that it start correctly. After 1500 ms the fan
 // speed is set to the last known value or at the minimal
-// speed value of the last known value is zero 
+// speed value of the last known value is zero
 void Fan::Start()
 {
 	SetSpeed(255);

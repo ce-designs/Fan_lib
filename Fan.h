@@ -1,9 +1,9 @@
-/* 
+/*
 * Fan.h
 *
-* Created: 13-4-2014 13:28:32
-* Author: CE-Designs
-* Version: 1.0.0.0 
+* Created:	13-4-2014 13:28:32
+* Author:	CE-Designs
+* Version:	1.01
 */
 
 
@@ -18,20 +18,20 @@
 
 class Fan
 {
-//variables
-public:	
+	//variables
+	public:
 	
-protected:
+	protected:
 
-private:
+	private:
 
 	int MinValue;		// the lowest value where the fan still responds properly
 	int FanControlPin;	// PWM pin that controls the fan
 	int CurrentValue;	// holds the current value of the fan, which relates to the fan speed
 	
 	
-//functions
-public:
+	//functions
+	public:
 	Fan(int pwmControlPin, int minValue);
 	
 	void SetSpeed(int value);
@@ -44,8 +44,8 @@ public:
 	int LowestSpeed();
 	int HighestSpeed();
 	
-protected:
-private:
+	protected:
+	private:
 	
 
 }; //Fan
